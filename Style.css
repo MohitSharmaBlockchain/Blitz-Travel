@@ -392,8 +392,8 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 100vw;
     /* height: 80vh; */
     background: var(--cl-orangewhite);
-    position: relative;
     overflow: hidden;
+    position: relative;
 }
 
 #featuretours section {
@@ -402,6 +402,7 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 95vw;
     white-space: nowrap;
     margin-right: -100rem;
+    position: relative;
 }
 
 #featuretours section::-webkit-scrollbar {
@@ -470,7 +471,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .location {
     width: 2rem;
     height: 2rem;
-    margin-left: 6.5rem;
+    margin-left: 7.3rem;
 }
 
 .card-info-3 {
@@ -504,7 +505,7 @@ input[type="search"]::-webkit-search-cancel-button {
     display: inline-block;
     /* height: 25rem; */
     /* background: var(--cl-white); */
-    margin: 3rem 0rem 2rem 2rem;
+    margin: 3rem 2rem 2rem 2rem;
 }
 
 #featuretours section aside img {
@@ -527,27 +528,92 @@ input[type="search"]::-webkit-search-cancel-button {
 
 #explore-all-tours-div {
     position: absolute;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    top: 16.5rem;
-    left: 67.5rem;
-    width: 50rem;
-    height: 5rem;
+    top: 0vw;
+    right: 0vw;
+    width: 5rem;
+    height: 100%;
     background: var(--cl-orange);
-    transform: rotateZ(90deg);
 }
 
 #explore-all-tours {
-    margin-left: 0rem;
+    position: absolute;
+    writing-mode: vertical-rl;
     font-size: 2.5rem;
     font-family: var(--ff-OpenSans);
     font-weight: 500;
+    top: 23%;
+    margin-left: 0.3rem;
+    text-align: center;
 }
 
-@media Screen and (max-width: 1100px) {}
+@media Screen and (max-width: 1100px) {
+    #featuretours h2 {
+        font-size: 1.75rem;
+    }
+    #featuretours hr {
+        width: 10rem;
+    }
+    #explore-all-tours {
+        font-size: 2rem;
+        margin-left: 0.6rem;
+        margin-top: 1.5rem;
+    }
+    #featuretours section aside {
+        margin: 3rem 1rem 2rem -2rem;
+    }
+    #featuretours section aside img {
+        width: 7rem;
+        height: 7rem;
+    }
+    #featuretours section aside h1 {
+        font-size: 1.5rem;
+    }
+    .card {
+        width: 18rem;
+        margin: 2.5rem 0rem 2rem 1.5rem;
+        border-radius: 2rem;
+    }
+    .card-img {
+        height: 13rem;
+    }
+    .savenow {
+        font-size: 1rem;
+    }
+    .daynight {
+        font-size: 1rem;
+    }
+    .place {
+        font-size: 1.4rem;
+    }
+    .money {
+        font-size: 1.4rem;
+    }
+    .location {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: 5.7rem;
+    }
+    .star {
+        width: 1rem;
+        height: 1rem;
+    }
+    .review {
+        font-size: 1rem;
+        margin: 0rem 0rem 0rem 0.4rem;
+    }
+    .pakage-name {
+        font-size: 1.3rem;
+    }
+}
 
-@media Screen and (max-width: 700px) {}
+@media Screen and (max-width: 700px) {
+    #featuretours h2 {
+        font-size: 1.5rem;
+    }
+    #featuretours hr {
+        width: 8rem;
+    }
+}
 
 /* FEATUREDTOURS */
 
@@ -865,6 +931,12 @@ input[type="search"]::-webkit-search-cancel-button {
     .destination-grid-img p {
         font-size: 1rem;
     }
+    #destination-grid-img-3 {
+        border-radius: 0rem 6rem 0rem 0rem;
+    }
+    #destination-grid-img-11 {
+        border-radius: 0rem 0rem 0rem 6rem;
+    }
     #top-destinations section {
         margin: 2.75rem auto;
         display: grid;
@@ -897,6 +969,12 @@ input[type="search"]::-webkit-search-cancel-button {
     }
     .destination-grid-img p {
         font-size: 1rem;
+    }
+    #destination-grid-img-3 {
+        border-radius: 0rem 5rem 0rem 0rem;
+    }
+    #destination-grid-img-11 {
+        border-radius: 0rem 0rem 0rem 5rem;
     }
     #top-destinations section {
         margin: 2.5rem auto;
