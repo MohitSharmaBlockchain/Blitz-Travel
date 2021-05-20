@@ -391,10 +391,10 @@ input[type="search"]::-webkit-search-cancel-button {
         margin-top: 9rem;
         margin-left: 3rem;
         font-family: 'PT Serif', serif;
-        color: rgba(255, 255, 255, 0);
+        color: rgba(255, 38, 38, 0);
         -webkit-text-stroke: 0.1rem rgb(255, 255, 255, 0.2);
     }
-    #blitz-section-h1::after {
+    /* #blitz-section-h1::after {
         content: "BliTz";
         position: absolute;
         top: 0px;
@@ -407,15 +407,15 @@ input[type="search"]::-webkit-search-cancel-button {
         color: rgba(255, 255, 255, 0.6);
         overflow: hidden;
         /* animation: text 9s linear infinite; */
-    }
-    @keyframes text {
+    } */
+    /* @keyframes text {
         0%, 100% {
             width: 0%;
         }
         10% {
             width: 54%;
         }
-    }
+    } */
     #blitz-section-para {
         font-size: 1.5rem;
         padding-left: 3rem;
