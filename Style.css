@@ -711,7 +711,7 @@ input[type="search"]::-webkit-search-cancel-button {
         background-size: 120vw 170vh;
         background-position: -17rem -9rem;
         background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./airplane1.jpg) no-repeat;
-        background-size: 170vw 150vh;
+        background-size: 200vw 150vh;
         background-position: -14rem -9rem;
         /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./liberty.jpg);
     background-size: 100vw 240vh;
