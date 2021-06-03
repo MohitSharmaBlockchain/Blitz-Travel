@@ -21,10 +21,6 @@
     border: 0;
 }
 
-::-webkit-scrollbar {
-    opacity: 0;
-}
-
 :root {
     /* CLOLORS */
     --cl-white: #FFFFFF;
@@ -49,6 +45,7 @@
     margin: 0px;
     box-sizing: border-box;
     overflow-x: hidden;
+    user-select: none;
 }
 
 a {
@@ -110,15 +107,6 @@ h6 {
     font-weight: 400;
 }
 
-/* h6:hover {
-    color: var(--cl-orange);
-} */
-
-/* 
-#god {
-    position: relative;
-} */
-
 /* Global CSS */
 
 /* +++++++++ */
@@ -130,29 +118,9 @@ h6 {
 #frontpage {
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
     position: relative;
-    background-color: grey;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Mountains\ 5472\ x\ 3648.jpg);
-    background-size: 120vw 170vh;
-    background-position: -18rem 0rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Mountains\ 5472\ x\ 3648\ resized\ \(2\)\ 1.jpg);
-    background-size: 100vw 100vh;
-    background-position: 0rem 0rem; */
-    /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./Mountains\ 1920\ x\ 1280\ \ 1\ \(2\).jpg);
-    background-size: 100vw 100vh;
-    background-position: 0rem 0rem; */
-    /* background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./IMAGES/Mountains\ 1920\ x\ 1280.jpg);
-    background-size: 120vw 170vh;
-    background-position: -18rem -4rem; */
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./airplane1.jpg) no-repeat;
-    background-size: 100vw 170vh;
-    background-position: 0rem -12rem;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./liberty.jpg);
-    background-size: 100vw 240vh;
-    background-position: 0rem -8rem; */
-    /* z-index: 3; */
+    width: 100vw;
+    height: 721.2px;
 }
 
 /* ++++++++++ */
@@ -161,13 +129,13 @@ h6 {
 
 header {
     display: flex;
-    height: 8vh;
+    height: 3.5rem;
     width: 100vw;
     align-items: center;
     justify-content: space-between;
     position: absolute;
     font-family: 'Open Sans', sans-serif;
-    /* background-color: wheat; */
+    z-index: 3;
 }
 
 .bars {
@@ -184,7 +152,7 @@ header {
 }
 
 .front-header:hover {
-    color: #FB8122;
+    color: white;
 }
 
 #mid-header {
@@ -205,175 +173,36 @@ header {
     transform: rotatez(7deg);
 }
 
-#end-header {
+#section-end-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.1rem;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
+}
+
+#end-header-1:hover {
+    color: white;
+}
+
+#end-header-2 {
     padding: 0.6rem;
+    margin-left: 1.5rem;
     border: black solid 0.05rem;
     border-radius: 0.5rem;
 }
 
-#end-header:hover {
+#end-header-2:hover {
     cursor: pointer;
-    background-color: #FB8122;
-}
-
-.bars {
-    display: none;
-}
-
-/* HEADER */
-
-/* +++++++++ */
-
-#frontlayout {
-    display: flex;
-    /* height: calc(100vh - 7vh); */
-}
-
-#blitz-section {
-    width: 100vw;
-    height: calc(90vh - 7vh);
-}
-
-#blitz-section-h1 {
-    font-size: 13rem;
-    position: relative;
-    margin-top: 9rem;
-    margin-left: 3rem;
-    font-family: 'PT Serif', serif;
-    color: rgb(252, 252, 252);
-    /* -webkit-text-stroke: 0.1rem rgb(255, 255, 255, 0.2); */
-}
-
-/* #blitz-section-h1::after {
-    content: "BliTz";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 0rem;
-    width: 100rem;
-    height: 100%;
-    border-right: 2px solid rgba(255, 255, 255, 1);
-    font-family: 'PT Serif', serif;
-    color: rgba(255, 255, 255, 0.6);
-    overflow: hidden;
-    animation: text 9s linear infinite;
-} */
-
-@keyframes text {
-    0%, 100% {
-        width: 0%;
-    }
-    10% {
-        width: 54%;
-    }
-}
-
-#blitz-section-para {
-    font-size: 1.5rem;
-    padding-left: 3rem;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-#blitz-section-search {
-    display: flex;
-    height: 9vh;
-    margin: 2rem 0rem 0rem 4rem;
-    align-items: center;
-}
-
-#search {
-    height: 2.3rem;
-    font-size: 1.5rem;
-    text-indent: 0.5rem;
-    width: 70vh;
-    border: none;
-    border-radius: 0.3rem;
-}
-
-input[type="search"]::-webkit-search-cancel-button {
-    -webkit-appearance: none;
-}
-
-#explore {
+    background-color: black;
     color: white;
-    background-color: #FB8122;
-    font-family: var(--ff-Roboto);
-    font-size: 1.3rem;
-    padding: 0.5rem;
-    border-radius: 0.3rem;
-    margin-left: 0.3rem;
-    transition: all 0.3s linear;
-    cursor: pointer;
-}
-
-#explore:hover {
-    background-color: red;
-    transform: scale(1.03);
-}
-
-#information-section {
-    display: inline;
-    margin-top: 0rem;
-    border-radius: 0rem 0rem 0rem 0rem;
-    background-color: rgba(232, 90, 79, 0.6);
-    width: 60vw;
-    height: 100vh;
-}
-
-#information-section-1 {
-    width: 40vw;
-    height: 100vh;
-    transform: translate(0%);
-}
-
-#information-section-2 {
-    width: 40vw;
-    height: 80vh;
-    transform: translate(100%, calc(-80vh - 4rem));
-}
-
-#information-section-3 {
-    width: 40vw;
-    height: 80vh;
-    transform: translate(200%, calc(-160vh - 8rem));
-}
-
-#information-section-h1 {
-    font-size: 3rem;
-    color: white;
-    text-align: center;
-    margin: 0rem 3rem 1rem 0rem;
-    margin-top: 5rem;
-    font-family: 'Open Sans', sans-serif;
-    /* color: rgba(255, 255, 255, 0.8); */
-}
-.info-img{
-    margin-left: 2rem;
-    height: 30rem;
-    width: 35rem;
-    border-radius: 2rem;
-}
-#information-section-para {
-    /* color: rgba(255, 255, 255, 0.8); */
-    font-size: 1.5rem;
-    padding-left: 3rem;
 }
 
 @media Screen and (max-width: 1100px) {
-    #frontpage {
-        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./airplane1.jpg) no-repeat;
-        background-size: 140vw 170vh;
-        background-position: -10rem -13rem;
-    }
-    #information-section {
-        display: none;
-    }
     .front-header {
         display: none;
     }
-    #end-header {
+    #section-end-header {
         display: none;
     }
     #mid-header {
@@ -392,12 +221,129 @@ input[type="search"]::-webkit-search-cancel-button {
     }
 }
 
-@media Screen and (max-width: 700px) {
-    #frontpage {
-        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./airplane1.jpg) no-repeat;
-        background-size: 220vw 150vh;
-        background-position: -18rem -9rem;
+/* HEADER */
+
+/* +++++++++ */
+
+#frontlayout {
+    display: flex;
+    position: absolute;
+    height: 721.2px;
+    z-index: 1;
+}
+
+#blitz-section {
+    width: 62.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#blitz-section-h1 {
+    font-size: 13rem;
+    margin-left: 3rem;
+    font-weight: 100;
+    font-family: 'PT Serif', serif;
+    color: rgb(252, 252, 252);
+}
+
+#blitz-section-para {
+    font-size: 2rem;
+    padding-left: 3rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#blitz-section-search {
+    display: flex;
+    height: 9rem;
+    margin-left: 4rem;
+    align-items: center;
+}
+
+#search {
+    height: 2.3rem;
+    font-size: 1.5rem;
+    text-indent: 0.5rem;
+    width: 31.3rem;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+#explore {
+    color: white;
+    background-color: #FB8122;
+    font-family: var(--ff-Roboto);
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    margin-left: 0.5rem;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+#explore:hover {
+    background-color: red;
+    transform: scale(1.01);
+}
+
+.timeline {
+    position: relative;
+    height: 0.3rem;
+    width: 30rem;
+    border-radius: 2rem;
+    background: white;
+    margin-left: 8rem;
+}
+
+#timeline {
+    content: '';
+    position: absolute;
+    background: rgba(232, 90, 79);
+    width: 20%;
+    height: 0.3rem;
+}
+
+#information-section {
+    position: relative;
+    display: inline;
+    border-radius: 0rem 0rem 0rem 0rem;
+    background-color: rgba(232, 90, 79, 0.6);
+    width: 37.5vw;
+    height: 100%;
+}
+
+#information-section-h1 {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.info-img {
+    width: 34rem;
+    height: 30rem;
+    margin-left: 2rem;
+    border-radius: 3rem 0rem 0rem 3rem;
+}
+
+@media Screen and (max-width: 1500px) {
+    #information-section {
+        display: none;
     }
+    #blitz-section {
+        width: 100vw;
+        height: calc(90vh - 7vh);
+    }
+}
+
+@media Screen and (max-width: 700px) {
     #blitz-section-h1 {
         font-size: 7rem;
         margin-left: -0.5rem;
@@ -421,6 +367,224 @@ input[type="search"]::-webkit-search-cancel-button {
     #explore {
         font-size: 1.1rem;
     }
+}
+
+/* SLIDER */
+
+/* +++++ */
+
+.slides-2 {
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+
+.slide-2 {
+    width: 34rem;
+    height: 100%;
+    transition: 2s;
+}
+
+#slide4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./IMAGES/Airplane-info.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#slide5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./IMAGES/restroom.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#slide6 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./IMAGES/adventure.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.slider-btn {
+    display: none;
+}
+
+.nav-manual-2 {
+    position: absolute;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    bottom: 2rem;
+    left: -6rem;
+}
+
+.manual-btn-2 {
+    padding: 5px;
+    border: 3px solid white;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 8;
+}
+
+.manual-btn-2:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn-2:hover {
+    background-color: white;
+}
+
+.nav-auto-2 {
+    position: absolute;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    z-index: 7;
+    bottom: 2rem;
+    left: -6rem;
+}
+
+.nav-auto-2 div {
+    padding: 5px;
+    border: 3px solid white;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.nav-auto-2 div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio4:checked~.nav-auto-2 .auto-btn4 {
+    background-color: white;
+}
+
+#radio5:checked~.nav-auto-2 .auto-btn5 {
+    background-color: white;
+}
+
+#radio6:checked~.nav-auto-2 .auto-btn6 {
+    background-color: white;
+}
+
+#radio4:checked~.first {
+    margin-left: 0%;
+}
+
+#radio5:checked~.first {
+    margin-left: -33.33%;
+}
+
+#radio6:checked~.first {
+    margin-left: -66.66%;
+}
+
+/* SLIDER */
+
+/* +++++ */
+
+.slider {
+    width: 100vmax;
+    height: 721.2px;
+}
+
+.slides {
+    display: flex;
+    height: 721.2px;
+    width: 300%;
+}
+
+.slide {
+    width: 100vmax;
+    transition: 2s;
+}
+
+#slide1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./IMAGES/airplane.jpg") no-repeat;
+    background-size: 100vmax 100%;
+}
+
+#slide2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./IMAGES/Mountains.png") no-repeat;
+    background-size: 100vmax 100%;
+}
+
+#slide3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./IMAGES/liberty.jpg") no-repeat;
+    background-size: 100vw 100%;
+}
+
+.slider-btn {
+    display: none;
+}
+
+.nav-manual {
+    position: absolute;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    bottom: 4rem;
+    left: -2rem;
+}
+
+.manual-btn {
+    padding: 5px;
+    border: 3px solid rgba(232, 90, 79);
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 8;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: rgba(232, 90, 79);
+}
+
+.nav-auto {
+    position: absolute;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    z-index: 7;
+    bottom: 4rem;
+    left: -2rem;
+}
+
+.nav-auto div {
+    padding: 5px;
+    border: 3px solid rgba(232, 90, 79);
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.nav-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.nav-auto .auto-btn1 {
+    background-color: rgba(232, 90, 79);
+}
+
+#radio2:checked~.nav-auto .auto-btn2 {
+    background-color: rgba(232, 90, 79);
+}
+
+#radio3:checked~.nav-auto .auto-btn3 {
+    background-color: rgba(232, 90, 79);
+}
+
+#radio1:checked~.first {
+    margin-left: 0%;
+}
+
+#radio2:checked~.first {
+    margin-left: -33.3333%;
+}
+
+#radio3:checked~.first {
+    margin-left: -66.6666%;
 }
 
 /* FRONTPAGE */
@@ -587,6 +751,7 @@ input[type="search"]::-webkit-search-cancel-button {
     top: 23%;
     margin-left: 0.3rem;
     text-align: center;
+    cursor: default;
 }
 
 @media Screen and (max-width: 1100px) {
@@ -1261,6 +1426,7 @@ input[type="search"]::-webkit-search-cancel-button {
 #developer-newsletter-section p:hover {
     transition: all 0.3s linear;
     padding: 0.7rem;
+    background-color: red;
     cursor: pointer;
 }
 

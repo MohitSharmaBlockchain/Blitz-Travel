@@ -5,12 +5,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Style.css" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
     <title>BliTz</title>
 </head>
 
 <body>
 
     <article id="frontpage">
+        <!-- SLIDER -->
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" checked="checked" name="radio-btn" id="radio1" class="slider-btn">
+                <input type="radio" name="radio-btn" id="radio2" class="slider-btn">
+                <input type="radio" name="radio-btn" id="radio3" class="slider-btn">
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <div id="slide1" class="slide first">
+                </div>
+                <div id="slide2" class="slide">
+                </div>
+                <div id="slide3" class="slide">
+                </div>
+            </div>
+        </div>
+        <!-- SLIDER END -->
+
+
         <!-- HEADER -->
         <header>
             <section>
@@ -20,8 +48,11 @@
             <a href="Contact.html" class="front-header"> CONTACT</a>
             </section>
             <a href="Index.html" id="mid-header"> BliTz</a>
-            <img src="./paper-plane.svg" id="svg-airplane" alt="">
-            <a href="" id="end-header"> MY ACCOUNT</a>
+            <img src="./SVG/paper-plane.svg" id="svg-airplane" alt="">
+            <section  id="section-end-header">
+            <a href="" id="end-header-1"> LOG IN </a>
+            <a href="" id="end-header-2"> SIGN UP </a>
+            </section>
             <p class="bars"><i class="fas fa-bars fa-2x"></i></p>
         </header>
         <!-- HEADER -->
@@ -36,12 +67,37 @@
                     <input id="search" placeholder="Enter the Location" type="search">
                     <h1 id="explore">EXPLORE</h1>
                 </div>
+                <div class="timeline">
+                    <div id="timeline"></div>
+                </div>
             </section>
             <section id="information-section">
-                <div id="information-section-1">
                     <h1 id="information-section-h1">Book Flight Tickets</h1>
-                    <img class="info-img" src="./Airplane-info.jpg" alt="">
-                </div>
+                    <!-- SLIDER -->
+                    <div class="info-img">
+                        <div class="slides-2">
+                            <input type="radio" name="radio-btn-2" checked="checked" id="radio4" class="slider-btn">
+                            <input type="radio" name="radio-btn-2" id="radio5" class="slider-btn">
+                            <input type="radio" name="radio-btn-2" id="radio6" class="slider-btn">
+                            <div class="nav-manual-2">
+                                <label for="radio4" class="manual-btn-2"></label>
+                                <label for="radio5" class="manual-btn-2"></label>
+                                <label for="radio6" class="manual-btn-2"></label>
+                            </div>
+                            <div class="nav-auto-2">
+                                <div class="auto-btn4"></div>
+                                <div class="auto-btn5"></div>
+                                <div class="auto-btn6"></div>
+                            </div>
+                            <div id="slide4" class="slide-2 first">
+                            </div>
+                            <div id="slide5" class="slide-2">
+                            </div>
+                            <div id="slide6" class="slide-2">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SLIDER END -->
             </section>
         </article>
     </article>
@@ -121,9 +177,7 @@
                 <div class="card-info-4">
                     <h3 class="pakage-name">Charming Exotic Goa</h3>
                 </div>
-
             </div>
-
             <div class="card">
                 <div class="card-img"><img src="./IMAGES/feature-vegas.jpg" alt=""></div>
                 <div class="card-info-1">
@@ -146,7 +200,6 @@
                 <div class="card-info-4">
                     <h3 class="pakage-name">5 Nights of Vegas</h3>
                 </div>
-
             </div>
             <div class="card">
                 <div class="card-img"><img src="./IMAGES/feature-south-africa.jpg" alt=""></div>
@@ -170,8 +223,6 @@
                 <div class="card-info-4">
                     <h3 class="pakage-name">Best of South Africa</h3>
                 </div>
-            </div>
-
             </div>
             <aside>
                 <div>
@@ -386,7 +437,9 @@
     <!-- COPYRIGHTSECTION -->
 
 
-    <script src="./App.js"></script>
+    <script src="./Review.js"></script>
+    <script src="./slider.js"></script>
+    <script src="./app.js"></script>
     <script src="https://kit.fontawesome.com/33149de307.js" crossorigin="anonymous"></script>
 </body>
 
